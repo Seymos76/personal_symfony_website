@@ -2,35 +2,35 @@
 
 namespace App\Entity;
 
-use App\Repository\ServiceRepository;
+use App\Repository\SocialNetworkRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass=ServiceRepository::class)
+ * @ORM\Entity(repositoryClass=SocialNetworkRepository::class)
  */
-class Service
+class SocialNetwork
 {
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=100)
      */
-    private $name;
+    private string $name;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $slug;
+    private string $url;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=50)
      */
-    private $description;
+    private string $icon;
 
     public function getId(): ?int
     {
@@ -49,26 +49,26 @@ class Service
         return $this;
     }
 
-    public function getSlug(): ?string
+    public function getUrl(): ?string
     {
-        return $this->slug;
+        return $this->url;
     }
 
-    public function setSlug(string $slug): self
+    public function setUrl(?string $url): self
     {
-        $this->slug = $slug;
+        $this->url = $url;
 
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getIcon(): ?string
     {
-        return $this->description;
+        return $this->icon;
     }
 
-    public function setDescription(string $description): self
+    public function setIcon(string $icon): self
     {
-        $this->description = $description;
+        $this->icon = $icon;
 
         return $this;
     }

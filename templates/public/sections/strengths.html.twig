@@ -47,70 +47,20 @@
                         <!-- //.legend -->
 
                         <div class="chart clearfix">
-                            <div class="item">
-                                <div class="bar">
-                                    <span class="percent">92%</span>
+                            {% for strength in strengths %}
+                                <div class="item">
+                                    <div class="bar">
+                                        <span class="percent">{{ strength.level }}%</span>
 
-                                    <div class="item-progress" data-percent="92">
-                                        <span class="title">Creativity</span>
+                                        <div class="item-progress" data-percent="{{ strength.level }}">
+                                            <span class="title">{{ strength.name }}</span>
+                                        </div>
+                                        <!-- //.item-progress -->
                                     </div>
-                                    <!-- //.item-progress -->
+                                    <!-- //.bar -->
                                 </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <div class="bar">
-                                    <span class="percent">71%</span>
-
-                                    <div class="item-progress" data-percent="71">
-                                        <span class="title">Reliable</span>
-                                    </div>
-                                    <!-- //.item-progress -->
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <div class="bar">
-                                    <span class="percent">82%</span>
-
-                                    <div class="item-progress" data-percent="82">
-                                        <span class="title">Comunication</span>
-                                    </div>
-                                    <!-- //.item-progress -->
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <div class="bar">
-                                    <span class="percent">58%</span>
-
-                                    <div class="item-progress" data-percent="58">
-                                        <span class="title">Leadership</span>
-                                    </div>
-                                    <!-- //.item-progress -->
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
-
-                            <div class="item">
-                                <div class="bar">
-                                    <span class="percent">67%</span>
-
-                                    <div class="item-progress" data-percent="67">
-                                        <span class="title">Persuasion</span>
-                                    </div>
-                                    <!-- //.item-progress -->
-                                </div>
-                                <!-- //.bar -->
-                            </div>
-                            <!-- //.item -->
+                                <!-- //.item -->
+                            {% endfor %}
                         </div>
                         <!-- //.chart -->
                     </div>

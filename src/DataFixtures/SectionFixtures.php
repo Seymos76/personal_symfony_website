@@ -8,9 +8,10 @@ use App\DemoData\DemoDataTrait;
 use App\Entity\Section;
 use App\Entity\SectionTitle;
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 
-class SectionFixtures extends Fixture
+class SectionFixtures extends Fixture implements DependentFixtureInterface
 {
     use DemoDataTrait;
 
@@ -23,13 +24,20 @@ class SectionFixtures extends Fixture
             $sectionTitle = $this->getReference("section_title.$sectionName");
             $newSection = new Section();
             $newSection
-                ->setTitle('profile')
-                ->setName('section.profile')
+                ->setTitle($sectionName)
+                ->setName("section.$sectionName")
                 ->setPosition(1)
                 ->setSectionTitle($sectionTitle)
             ;
-            $manager->persist($section);
+            $manager->persist($newSection);
         }
         $manager->flush();
+    }
+
+    public function getDependencies(): array
+    {
+        return [
+            SectionTitleFixtures::class
+        ];
     }
 }

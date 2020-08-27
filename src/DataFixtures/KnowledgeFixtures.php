@@ -5,7 +5,7 @@ namespace App\DataFixtures;
 
 
 use App\DemoData\DemoDataTrait;
-use App\Entity\Skill;
+use App\Entity\Knowledge;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
@@ -17,7 +17,7 @@ class KnowledgeFixtures extends Fixture
     {
         $knowledges = $this->loadAndDecodeJsonDataFile("knowledges");
         foreach ($knowledges as $knowledge) {
-            $newKnowledge = (new Skill())
+            $newKnowledge = (new Knowledge())
                 ->setName($knowledge["name"])
                 ->setLevel($knowledge["level"])
                 ->setImage($knowledge["image"])

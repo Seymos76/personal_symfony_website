@@ -15,7 +15,7 @@ class WorkProcessFixtures extends Fixture
 
     public function load(ObjectManager $manager)
     {
-        $workProcesses = $this->loadAndDecodeJsonDataFile("knowledges");
+        $workProcesses = $this->loadAndDecodeJsonDataFile("work_processes");
         foreach ($workProcesses as $workProcess) {
             $newProcess = (new WorkProcess())
                 ->setLabel($workProcess["label"])

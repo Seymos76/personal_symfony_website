@@ -37,12 +37,12 @@ class Experience
     private string $description;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=255)
      */
     private $fromDate;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=255)
      */
     private $toDate;
 

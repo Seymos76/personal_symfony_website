@@ -15,12 +15,17 @@ class ContactDetail
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $detail;
+    private string $detail;
+
+    public static function create(string $detail): self
+    {
+        return (new self())->setDetail($detail);
+    }
 
     public function getId(): ?int
     {

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Tasses de café",
+    "achieved": 550,
+    "icon": "coffee"
+  },
+  {
+    "name": "Heures de travail",
+    "achieved": 5050,
+    "icon": "coffee"
+  },
+  {
+    "name": "Projets à succès",
+    "achieved": 5050,
+    "icon": "coffee"
+  },
+  {
+    "name": "Clients satisfaits",
+    "achieved": 150,
+    "icon": "users"
+  }
+]

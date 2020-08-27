@@ -17,7 +17,7 @@
                                 <span class="divider"></span>
 
                                 <p class="text-grey">
-                                    I currently work at Galley-La Company, where I spend most of my time crafting and working on awesome projects.
+                                    {{ profile.description }}
                                 </p>
 
                                 <p class="text-grey">
@@ -37,17 +37,15 @@
                                 <h4>Contact Details</h4>
 
                                 <ul class="list-unstyled text-grey">
-                                    <li>Nick Berg</li>
-                                    <li>123 Water Seven, Grand Line</li>
-                                    <li>+123 456 7890</li>
-                                    <li>hello@nickberg.com</li>
-                                    <li>www.nickberg.com</li>
+                                    {% for detail in details %}
+                                        <li>{{ detail.detail }}</li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                             <!-- //.col-md-5 -->
 
                             <div class="col-sm-6 col-md-7">
-                                <a href="#" class="btn btn-lg btn-custom">
+                                <a href="{{ profile.resumeToDownload }}" class="btn btn-lg btn-custom">
                                     <i class="icon-File-Download"></i> Download Resume
                                 </a>
                             </div>
@@ -63,7 +61,7 @@
                 <!-- PROFILE PICTURE START -->
                 <div class="col-md-5 hidden-xs hidden-sm match-height pp-wrapper">
                     <div class="profile-picture style-one">
-                        <img src="assets/images/profile-picture-1.jpg" alt="profile picture" class="img-responsive"/>
+                        <img src="{{ profile.image }}" alt="profile picture" class="img-responsive"/>
                     </div>
                 </div>
                 <!-- //PROFILE PICTURE END -->

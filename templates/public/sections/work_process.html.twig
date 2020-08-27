@@ -28,79 +28,20 @@
             <!-- WORK PROCESS START -->
             <div class="work-process">
                 <div class="row">
-                    <div class="col-sm-2 col-md-2 item no-margin first">
-                        <div class="inner-content">
-                            <i class="icon-Light-Bulb2"></i>
+                    {% for p in processes %}
+                        <div class="col-sm-2 col-md-2 item {% if p.id % 2 != 0 %}no-margin{% endif %} {% if processes|first %}first{% elseif processes|last %}last{% endif %}">
+                            <div class="inner-content">
+                                <i class="icon-Light-Bulb2"></i>
 
-                            <span class="title">1. Idea</span>
+                                <span class="title">{{ p.position }}. {{ p.label }}</span>
 
-                            <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <!-- //.inner-content -->
+
+                            <i class="icon-Arrow icon-Down-3"></i>
                         </div>
-                        <!-- //.inner-content -->
-
-                        <i class="icon-Arrow icon-Down-3"></i>
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="col-sm-2 col-md-2 item">
-                        <div class="inner-content">
-                            <i class="icon-Pencil"></i>
-
-                            <span class="title">2. Sketch</span>
-                        </div>
-                        <!-- //.inner-content -->
-
-                        <i class="icon-Arrow icon-Up-3"></i>
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="col-sm-2 col-md-2 item no-margin">
-                        <div class="inner-content">
-                            <i class="icon-Monitor-2"></i>
-
-                            <span class="title">3. Design</span>
-                        </div>
-                        <!-- //.inner-content -->
-
-                        <i class="icon-Arrow icon-Down-3"></i>
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="col-sm-2 col-md-2 item">
-                        <div class="inner-content">
-                            <i class="icon-Coding"></i>
-
-                            <span class="title">4. Develop</span>
-                        </div>
-                        <!-- //.inner-content -->
-
-                        <i class="icon-Arrow icon-Up-3"></i>
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="col-sm-2 col-md-2 item no-margin">
-                        <div class="inner-content">
-                            <i class="icon-Bug"></i>
-
-                            <span class="title">5. Test</span>
-                        </div>
-                        <!-- //.inner-content -->
-
-                        <i class="icon-Arrow icon-Down-3"></i>
-                    </div>
-                    <!-- //.item -->
-
-                    <div class="col-sm-2 col-md-2 item last">
-                        <div class="inner-content">
-                            <i class="icon-Rocket"></i>
-
-                            <span class="title">6. Launch</span>
-
-                            <span class="dot"></span>
-                        </div>
-                        <!-- //.inner-content -->
-                    </div>
-                    <!-- //.item -->
+                    {% endfor %}
                 </div>
                 <!-- //.row -->
             </div>

@@ -2,7 +2,7 @@
 
 {% block body %}
     <!-- PROFILE SECTION START -->
-    {% include "public/sections/profile.html.twig" %}
+    {% include "public/sections/profile.html.twig" with {'profile': profile, 'details': contact_details} %}
     <!-- //PROFILE SECTION END -->
 
 
@@ -10,17 +10,17 @@
 
 
     <!-- SERVICES SECTION START -->
-    {% include "public/sections/services.html.twig" %}
+    {% include "public/sections/services.html.twig" with {'services': services} %}
     <!-- //SERVICES SECTION END -->
 
 
     <!-- STRENGTHS SECTION START -->
-    {% include "public/sections/strengths.html.twig" %}
+    {% include "public/sections/strengths.html.twig" with {'strengths': strengths} %}
     <!-- //STRENGTHS SECTION END -->
 
 
     <!-- RESUME SECTION START -->
-    {% include "public/sections/resume.html.twig" %}
+    {% include "public/sections/resume.html.twig" with {'educations': educations, 'works': work_experiences, 'freelances': freelance_experiences} %}
     <!-- //RESUME SECTION END -->
 
 
@@ -28,12 +28,12 @@
 
 
     <!-- SKILLS SECTION START -->
-    {% include "public/sections/skills.html.twig" %}
+    {% include "public/sections/skills.html.twig" with {'skills': skills} %}
     <!-- //SKILLS SECTION END -->
 
 
     <!-- KNOWLEDGE SECTION START -->
-    {% include "public/sections/knowledge.html.twig" %}
+    {% include "public/sections/knowledge.html.twig" with {'knowledges': knowledges} %}
     <!-- //KNOWLEDGE SECTION END -->
 
 
@@ -41,16 +41,20 @@
 
 
     <!-- MILESTONES SECTION START -->
-    {% include "public/sections/milestones.html.twig" %}
+    {% include "public/sections/milestones.html.twig" with {'milestones': milestones} %}
     <!-- //MILESTONES SECTION END -->
 
 
     <!-- WORK PROCESS SECTION START -->
-    {% include "public/sections/work_process.html.twig" %}
+    {% include "public/sections/work_process.html.twig" with {'processes': work_process} %}
     <!-- //WORK PROCESS SECTION END -->
 
 
     <!-- CONTACT SECTION START -->
     {% include "public/sections/contact.html.twig" %}
     <!-- //CONTACT SECTION END -->
+
+    <!-- FOOTER START -->
+    {% include "public/sections/footer.html.twig" with {'social_networks': social_networks} %}
+    <!-- //FOOTER END -->
 {% endblock %}

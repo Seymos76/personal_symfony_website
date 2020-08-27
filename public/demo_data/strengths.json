@@ -1,22 +1,22 @@
 [
   {
-    "label": "Créatif",
+    "label": "Passionné",
+    "level": 100.0
+  },
+  {
+    "label": "Curieux",
     "level": 90.0
   },
   {
-    "label": "Empathique",
-    "level": 50.0
-  },
-  {
     "label": "Déterminé",
-    "level": 50.0
+    "level": 90.0
   },
   {
-    "label": "Perfectionniste",
-    "level": 50.0
+    "label": "Minutieux",
+    "level": 80.0
   },
   {
     "label": "Autonome",
-    "level": 50.0
+    "level": 80.0
   }
 ]

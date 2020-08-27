@@ -20,17 +20,17 @@ class Skill
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    protected $name;
 
     /**
      * @ORM\Column(type="float")
      */
-    private $level;
+    protected $level;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
      */
-    private $image;
+    protected $image;
 
     public function getId(): ?int
     {
