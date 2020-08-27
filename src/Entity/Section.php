@@ -91,6 +91,9 @@ class Section
     public function setSectionTitle(?SectionTitle $sectionTitle): self
     {
         $this->sectionTitle = $sectionTitle;
+        if ($this->getSectionTitle() !== $sectionTitle) {
+            $this->sectionTitle->setSection($this);
+        }
 
         return $this;
     }

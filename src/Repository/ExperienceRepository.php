@@ -2,21 +2,21 @@
 
 namespace App\Repository;
 
-use App\Entity\Education;
+use App\Entity\Experience;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method Education|null find($id, $lockMode = null, $lockVersion = null)
- * @method Education|null findOneBy(array $criteria, array $orderBy = null)
- * @method Education[]    findAll()
- * @method Education[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Experience|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Experience|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Experience[]    findAll()
+ * @method Experience[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class EducationRepository extends ServiceEntityRepository
+class ExperienceRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Education::class);
+        parent::__construct($registry, Experience::class);
     }
 
     // /**

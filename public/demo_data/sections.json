@@ -1,0 +1,29 @@
+[
+  {
+    "name": "app.profile"
+  },
+  {
+    "name": "app.services"
+  },
+  {
+    "name": "app.strengths"
+  },
+  {
+    "name": "app.resume"
+  },
+  {
+    "name": "app.skills"
+  },
+  {
+    "name": "app.knowledge"
+  },
+  {
+    "name": "app.milestones"
+  },
+  {
+    "name": "app.work_process"
+  },
+  {
+    "name": "app.contact"
+  }
+]

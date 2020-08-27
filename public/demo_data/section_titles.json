@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Hello, my name is Berg",
+    "sub_title": "Nick Berg, 28 years young, born and grew up in Water Seven, Grand Line. Highly motivated creative developer with international client portfolio.",
+    "align": "left",
+    "name": "profile"
+  },
+  {
+    "title": "What I'm Doing",
+    "sub_title": "I love what I do. I take great pride in what I do. And I can't do something halfway, three-quarters, nine-tenths. If I'm going to do something, I go all the way.",
+    "align": "center",
+    "name": "services"
+  },
+  {
+    "title": "My strengths",
+    "sub_title": "Failure will never overtake me if my determination to succeed is strong enough.",
+    "align": "center",
+    "name": "strengths"
+  },
+  {
+    "title": "My resume",
+    "sub_title": "If you call failures experiments, you can put them in your resume and claim them as achievements.",
+    "align": "center",
+    "name": "resume"
+  },
+  {
+    "title": "Skills & Expertise",
+    "sub_title": "A winner is someone who recognizes his God-given talents, works his tail off to develop them into skills, and uses these skills to accomplish his goals.",
+    "align": "center",
+    "name": "skills"
+  },
+  {
+    "title": "Knowledge",
+    "sub_title": "Human behavior flows from three main sources: desire, emotion, and knowledge.",
+    "align": "center",
+    "name": "knowledge"
+  },
+  {
+    "title": "Milestones Achieved",
+    "sub_title": "My path has not been determined. I shall have more experiences and pass many more milestones.",
+    "align": "center",
+    "name": "milestones"
+  },
+  {
+    "title": "Work Process",
+    "sub_title": "As a human being, I'm work in progress",
+    "align": "center",
+    "name": "work_process"
+  },
+  {
+    "title": "Contact Me",
+    "sub_title": "Have a project you'd like to discuss? ",
+    "align": "center",
+    "name": "contact"
+  }
+]

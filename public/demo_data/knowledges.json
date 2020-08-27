@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Développement sur mesure",
+    "level": 80,
+    "image": "html_css.png"
+  },
+  {
+    "name": "Audit de code",
+    "level": 15,
+    "image": "php_mysql.png"
+  },
+  {
+    "name": "Amélioration des performances",
+    "level": 25,
+    "image": "symfony.png"
+  },
+  {
+    "name": "Migration de version",
+    "level": 40,
+    "image": "reactjs.png"
+  },
+  {
+    "name": "Refonte technique",
+    "level": 30,
+    "image": "git.png"
+  },
+  {
+    "name": "Ajout de fonctionnalités",
+    "level": 60,
+    "image": "docker.png"
+  }
+]

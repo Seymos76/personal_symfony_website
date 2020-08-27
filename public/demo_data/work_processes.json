@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Idée",
+    "slug": "idee",
+    "position": 1
+  },
+  {
+    "label": "Prototype",
+    "slug": "prototype",
+    "position": 2
+  },
+  {
+    "label": "Design",
+    "slug": "design",
+    "position": 3
+  },
+  {
+    "label": "Code",
+    "slug": "code",
+    "position": 4
+  },
+  {
+    "label": "Tests",
+    "slug": "tests",
+    "position": 5
+  },
+  {
+    "label": "Déploiement",
+    "slug": "deploiement",
+    "position": 6
+  }
+]
