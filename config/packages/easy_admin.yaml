@@ -1,0 +1,15 @@
+easy_admin:
+    entities:
+        # List the entity class name you want to manage
+        - App\Entity\ContactDetail
+        - App\Entity\Experience
+        - App\Entity\Knowledge
+        - App\Entity\Milestone
+        - App\Entity\Profile
+        - App\Entity\Section
+        - App\Entity\SectionTitle
+        - App\Entity\Service
+        - App\Entity\Skill
+        - App\Entity\SocialNetwork
+        - App\Entity\Strength
+        - App\Entity\WorkProcess
