@@ -28,7 +28,7 @@
                         {% for e in educations %}
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">{{ e.fromDate }} - {{ e.toDate }}</span>
+                                    <span class="resume-year">{{ e.fromDateToString }} - {{ e.toDateToString }}</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -79,7 +79,7 @@
                         {% for w in work_experiences %}
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">{{ w.fromDate }} - {{ w.toDate }}</span>
+                                    <span class="resume-year">{{ w.fromDateToString }} - {{ w.toDateToString }}</span>
                                 </div>
                                 <!-- //.resume-year -->
 
@@ -129,7 +129,7 @@
                         {% for f in freelance_experiences %}
                             <div class="resume-item">
                                 <div class="resume-year">
-                                    <span class="resume-year">{{ f.fromDate }} - {{ f.toDate }}</span>
+                                    <span class="resume-year">{{ f.fromDateToString }} - {{ f.toDateToString }}</span>
                                 </div>
                                 <!-- //.resume-year -->
 

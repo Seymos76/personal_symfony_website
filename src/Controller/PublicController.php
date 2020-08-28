@@ -48,16 +48,22 @@ class PublicController extends AbstractController
                 'educations' => array_filter($allExperiences, static function($experience) {
                     if ($experience->getType() === 'education') {
                         return $experience;
+                    } else {
+                        return;
                     }
                 }),
                 'work_experiences' => array_filter($allExperiences, static function($experience) {
                     if ($experience->getType() === 'work') {
                         return $experience;
+                    } else {
+                        return;
                     }
                 }),
                 'freelance_experiences' => array_filter($allExperiences, static function($experience) {
                     if ($experience->getType() === 'freelance') {
                         return $experience;
+                    } else {
+                        return;
                     }
                 }),
                 'skills' => $skillRepository->findAll(),

@@ -10,6 +10,10 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class SectionTitle
 {
+    public const ALIGN_LEFT = "left";
+    public const ALIGN_CENTER = "center";
+    public const ALIGN_RIGHT = "right";
+
     /**
      * @ORM\Id
      * @ORM\GeneratedValue

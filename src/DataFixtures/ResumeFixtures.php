@@ -17,11 +17,13 @@ class ResumeFixtures extends Fixture
     {
         $resumes = $this->loadAndDecodeJsonDataFile("resume");
         foreach ($resumes as $resume) {
+            $fromDate = \DateTime::createFromFormat("Y-m-d", $resume["from_date"]);
+            $toDate = \DateTime::createFromFormat("Y-m-d", $resume["to_date"]);
             $newResume = (new Experience())
                 ->setName($resume["name"])
                 ->setDescription($resume["description"])
-                ->setFromDate($resume["from_date"])
-                ->setToDate($resume["to_date"])
+                ->setFromDate($fromDate)
+                ->setToDate($toDate)
             ;
             if (array_key_exists("school_name", $resume) && $resume["type"] === "education") {
                 $newResume->setSchoolName($resume["school_name"]);

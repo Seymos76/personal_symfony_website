@@ -3,32 +3,32 @@
     "name": "Chef de projet spé Développement",
     "school_name": "OpenClassrooms",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    "from_date": "2016",
-    "to_date": "2018",
+    "from_date": "2016-03-18",
+    "to_date": "2017-10-13",
     "type": "education"
   },
   {
     "name": "Formation API Rest + ReactJS",
     "school_name": "autoformation",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    "from_date": "2012",
-    "to_date": "2020",
+    "from_date": "2018-01-12",
+    "to_date": "2020-01-01",
     "type": "education"
   },
   {
     "name": "Développeur PHP Symfony",
     "company": "AMT Solutions",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    "from_date": "2019",
-    "to_date": "2019",
+    "from_date": "2019-01-01",
+    "to_date": "2019-01-01",
     "type": "work"
   },
   {
     "name": "Développeur ReactJS",
     "company": "Grottes du Cerdon",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
-    "from_date": "2019",
-    "to_date": "2020",
+    "from_date": "2019-01-01",
+    "to_date": "2020-12-12",
     "type": "freelance"
   }
 ]

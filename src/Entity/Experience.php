@@ -37,12 +37,12 @@ class Experience
     private string $description;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="datetime", length=255)
      */
     private $fromDate;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="datetime", length=255)
      */
     private $toDate;
 
@@ -93,11 +93,16 @@ class Experience
     }
 
     /**
-     * @return mixed
+     * @return \DateTime
      */
-    public function getFromDate()
+    public function getFromDate(): \DateTime
     {
         return $this->fromDate;
+    }
+
+    public function getFromDateToString(): string
+    {
+        return $this->fromDate->format("Y");
     }
 
     /**
@@ -116,6 +121,11 @@ class Experience
     public function getToDate()
     {
         return $this->toDate;
+    }
+
+    public function getToDateToString(): string
+    {
+        return $this->toDate->format("Y");
     }
 
     /**
